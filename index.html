@@ -8,7 +8,6 @@
   </head>
   <body>
     <div class="container">
-
       <!-- Nav and Main Section -->
 
       <header id="header-content">
@@ -23,7 +22,7 @@
               <li><a href="#header-content">Home</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#">Top-Rated</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="#Contact">Contact Us</a></li>
             </ul>
           </nav>
 
@@ -58,24 +57,28 @@
           <div class="main-right">
             <!-- Form Create -->
             <div class="form-container">
-
               <h2 id="form-heading">Find Your Best Restaurant</h2>
 
               <div class="form-locality">
                 <p class="form-para">Locality :</p>
-                <input type="text" class="form-input" placeholder="Enter Location here:">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Enter Location here:" />
               </div>
 
               <div class="form-locality">
                 <p class="form-para">Cuisine :</p>
-                <input type="text" class="form-input" placeholder="Enter your Cuisine:">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Enter your Cuisine:" />
               </div>
 
               <button class="predict-btn">Predict</button>
 
               <div id="output">Govind Shukla</div>
             </div>
-            
           </div>
         </div>
       </header>
@@ -87,15 +90,22 @@
         <div class="about-partion">
           <div class="about-left">
             <div class="about-heading-desc">
-              <h2>
-                About Zomato Dataset
-              </h2>
+              <h2>About Zomato Dataset</h2>
             </div>
             <div class="about-desc">
-              <p>In today's fast-paced world, choosing the right restaurant can be overwhelming. With thousands of dining options available, how do you know which one suits your taste and budget? Our Restaurant Recommender System solves this problem by providing personalized restaurant recommendations based on ratings, location, cuisine preferences, and data-driven insights.</p>
+              <p>
+                In today's fast-paced world, choosing the right restaurant can
+                be overwhelming. With thousands of dining options available, how
+                do you know which one suits your taste and budget? Our
+                Restaurant Recommender System solves this problem by providing
+                personalized restaurant recommendations based on ratings,
+                location, cuisine preferences, and data-driven insights.
+              </p>
             </div>
             <div class="about-desc">
-              Whether you're craving Italian, Indian, or Chinese cuisine, our system helps you discover the best places to eat with just a few clicks
+              Whether you're craving Italian, Indian, or Chinese cuisine, our
+              system helps you discover the best places to eat with just a few
+              clicks
             </div>
           </div>
           <div class="about-right">
@@ -104,7 +114,48 @@
         </div>
       </section>
 
-      
+      <!-- Contact-Us Section -->
+
+      <div id="Contact">
+        <div class="contact-heading">Contact Us</div>
+
+        <div class="contact-us">
+          <div class="contact-left">
+            <div class="contact-img"></div>
+          </div>
+
+          <div class="contact-right">
+            <div class="right-content">
+
+              <div class="contact-info">
+                <h2>Restaurant Feedback Form</h2>
+              </div>
+
+              <div class="name-div">
+                <input type="text"  class="contact-name" placeholder="First Name" required>
+                <input type="text"  class="contact-name" placeholder="Second Name" required>
+              </div>
+
+              <div class="phone-div">
+                <input class="phone-contact" type="number" placeholder="Enter Your Phone Number" required>
+              </div>
+
+              <div class="email-div">
+                <input type="email" class="email-contact" placeholder="Enter your Email here" required>
+              </div>
+
+              <div class="text-info">
+                <textarea class="feedback" placeholder="Write your Message here..."></textarea>
+              </div>
+
+              <div class="feedback-btn">
+                <button class="feedback-submit">Submit</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>

@@ -352,9 +352,186 @@ animation: slideFromRight 2s ease forwards;
     background-position: center;
     background-repeat: no-repeat;
 }
-@media screen and (max-width:800px){
-    .about-partion{
-        display: flex;
-        flex-direction: column;
+
+/* Contact-Us Section */
+
+#Contact{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    /* background-color: #e3ad2e; */
+    gap: 2rem;
+    /* background-color: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);; */
+}
+.contact-heading{
+    padding: 5px 15px;
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.contact-us{
+    width: 1400px;
+    height: 70%;
+    /* background-color: #3a3dfb; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.contact-left{
+    width: 50vw;
+    height: 100%;
+    /* background-color: grey; */
+    border: none;
+    border-radius: 10px;    
+    overflow: hidden;  
+    animation: slideFromLeft 2s ease forwards;
+}
+@keyframes slideFromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
     }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.contact-img{
+    width: 100%;
+    height: 100%;
+    background: url(./Image/contact.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-right{
+    width: 50vw;
+    height: 100%;
+    /* background-image: linear-gradient(to right, #05112e, #061733, #071b38, #0a203e, #0c2543); */
+    /* background-color: #f8f8f8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    animation: slideFromRight 2s ease forwards;
+}
+@keyframes slideFromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    width: 90%;
+    height: 98%;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    /* box-shadow: 0,px,4px,rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease , box-shadow 0.3s ease; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+/* .right-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border: 1px solid rgb(21, 21, 202);
+} */
+.contact-info{
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.contact-info h2{
+    font-weight: 400;
+}
+.name-div , .phone-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+    gap: 0.6rem;
+}
+.contact-name , .phone-contact{
+    padding: 10px 15px;
+    width: 67%;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.email-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.email-contact{
+    padding: 10px 15px;
+    width: 67%;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.text-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.feedback{
+    padding: 10px 15px;
+    width: 67%;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-btn{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.feedback-submit{
+    margin-top: 10px; 
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4f51d0;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
